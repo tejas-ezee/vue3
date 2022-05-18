@@ -14,7 +14,6 @@
               <input type="number" v-model="stock.quantity" placeholder="Quantity" class="form-control">
             </div>
             <div class="pull-right">
-              <!-- <button :disabled="(stock.quantity === 0) || (stock.quantity <= stock.hold) ? true : false" class="btn btn-success" @click="buyStock(stock)">{{ port ? 'Sell' : 'Buy' }}</button> -->
               <button :disabled="(!port && stock.quantity <= 0) || (port && stock.quantity > stock.hold) || (port && stock.quantity <= 0) ? true : false" class="btn btn-success" @click="handleStock(stock, port)">{{ port ? 'Sell' : 'Buy' }}</button>
             </div>
           </div>
@@ -36,6 +35,17 @@ defineProps({
     type: Object,
   }
 })
+
+// function filterProductsByCity () {
+//   let searchData = []
+//   searchData = stocksData.stocks.filter((item) => {
+//     console.log(item, city)
+//     // return a[0] === item.name
+//     // return city.indexOf(item.id) !== -1;
+//     return city.includes(item.id);
+//   })
+//   return searchData
+// }
 </script>
 
 <style scoped>
