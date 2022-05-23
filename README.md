@@ -100,5 +100,8 @@ npx create-nx-workspace@latest --preset=core
   /home/vinod/.npm/_npx/505743838affa773/node_modules/create-nx-workspace/bin
   ✔ Use Nx Cloud? (It's free and doesn't require registration.) · No
 
+npm install @nx-plus/vue --save-dev
+nx g @nx-plus/vue:app <my-app> ez-components
 
-
+npm install @nx-plus/nuxt --save-dev
+nx g @nx-plus/nuxt:app <my-app> ycloud
