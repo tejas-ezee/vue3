@@ -92,3 +92,13 @@ Nx Cloud pairs with Nx in order to enable you to build and test code more rapidl
 Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
 
 Visit [Nx Cloud](https://nx.app/) to learn more.
+
+For git init (https://github.com/git-guides/git-init#:~:text=git%20init%20Existing%20Folder&text=For%20an%20existing%20project%20to,turn%20into%20a%20Git%20repository.)
+
+npx create-nx-workspace@latest --preset=core
+  ✔ Workspace name (e.g., org name)     · nx-yc
+  /home/vinod/.npm/_npx/505743838affa773/node_modules/create-nx-workspace/bin
+  ✔ Use Nx Cloud? (It's free and doesn't require registration.) · No
+
+
+
